@@ -1,0 +1,33 @@
+person:
+  name: zhangsan
+  age: 18
+leyou:
+  name: 乐优商城
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ztest
+    username: root
+    password: root
+
+  #JPA Configuration:
+  jpa:
+    database: MySQL #spring集成Mybatis环境
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+
+  redis:
+    host: localhost
+    port: 6379
+
+mybatis:
+  type-aliases-package: com.lbn.springboot.pojo  #pojo别名扫描包
+  mapper-locations: classpath:mapper/*Mapper.xml #加载Mybatis映射文件
+
+
+
