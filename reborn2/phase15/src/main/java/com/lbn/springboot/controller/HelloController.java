@@ -40,7 +40,7 @@ public class HelloController {
     public ResponseEntity<Object> hello2(){
         List<User> list =new ArrayList();
         User user = new User();
-        user.setName("张三2222222");
+        user.setName("张三333333");
         User user2 = new User();
         user2.setName("李四111");
 
